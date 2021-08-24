@@ -156,5 +156,39 @@ describe('isVowel', function() {
         expect(isVowel()).toBe(false);
     });
 
+});
+
+describe('add', function() {
+    it('should be a defined function', function() {
+        expect(typeof add).toBe('function');
+    });
+
+    it('should be return 5 when 2 & 3 are inputs', function() {
+        expect(add(2, 3)).toBe(5);
+    });
+
+    it('should be return -12 when -3 & -9 are inputs', function() {
+        expect(add(-3, -9)).toBe(-12);
+    });
+
+    it('should be return 11 when "5" & 6 are inputs', function() {
+        expect(add("5", 6)).toBe(11);
+    });
+
+    it('should be return 6 when "-4" & "-10" are inputs', function() {
+        expect(add("-4", "10")).toBe(6);
+    });
+
+    it('should be return NaN when "banana" & "split" are inputs', function() {
+        expect(add("banana", "split")).toBeNaN();
+    });
+
+    it('should be return NaN when 2 & "apples" are inputs', function() {
+        expect(add(2, "apples")).toBeNaN();
+    });
+
+    it('should be return NaN when there is no input', function() {
+        expect(add()).toBeNaN();
+    });
 
 });

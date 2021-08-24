@@ -28,10 +28,15 @@ function isEven(input) {
 function isVowel(input) {
 
 
-if (input === "a" || input === "A" || input === "e" || input === "E" || input === "i" || input === "I" || input === "o" || input === "O" || input === "u" || input === "U") {
-    return true;
-} else {
-    return false;
+    return input === "a" || input === "A" || input === "e" || input === "E" || input === "i" || input === "I" || input === "o" || input === "O" || input === "u" || input === "U";
+
 }
+
+function add (numOne, numTwo) {
+
+    var numOneA = parseInt(numOne, 10);
+    var numTwoB = parseInt(numTwo, 10);
+
+    return numOneA + numTwoB;
 
 }
