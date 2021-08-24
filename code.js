@@ -4,5 +4,11 @@ function helloWorld() {
 }
 
 function sayHello(input) {
+
+    if (typeof input === "boolean") {
+        return "Hello, World!";
+    }
+
     return "Hello, " + input + "!";
+
 }
