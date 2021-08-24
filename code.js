@@ -12,3 +12,15 @@ function sayHello(input) {
     return "Hello, " + input + "!";
 
 }
+
+function isFive(input) {
+
+    var num = parseInt(input, 10);
+
+if (num === 5) {
+    return true;
+} else {
+    return false;
+}
+
+}
