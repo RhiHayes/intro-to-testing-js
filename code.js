@@ -15,12 +15,10 @@ function sayHello(input) {
 
 function isFive(input) {
 
-    var num = parseInt(input, 10);
+    if (input == 5) {
+        return true;
+    }
 
-if (num === 5) {
-    return true;
-} else {
-    return false;
-}
+    return typeof input === "boolean";
 
 }
