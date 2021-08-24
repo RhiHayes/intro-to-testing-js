@@ -24,3 +24,14 @@ function isEven(input) {
     return input % 2 == 0;
 
 }
+
+function isVowel(input) {
+
+
+if (input === "a" || input === "A" || input === "e" || input === "E" || input === "i" || input === "I" || input === "o" || input === "O" || input === "u" || input === "U") {
+    return true;
+} else {
+    return false;
+}
+
+}

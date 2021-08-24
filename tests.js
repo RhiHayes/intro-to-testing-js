@@ -14,6 +14,8 @@
     });
 });
 
+
+
 describe('sayHello', function() {
     it('should be defined as a function', function () {
         expect(typeof sayHello).toBe('function');
@@ -35,6 +37,10 @@ describe('sayHello', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
 
+    it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello("World")).toBe("Hello, World!");
+    });
+
     it('should return "Hello, World!" = true when executed', function() {
         expect(sayHello(true)).toBe("Hello, World!");
     });
@@ -44,6 +50,8 @@ describe('sayHello', function() {
     });
 
 });
+
+
 
 describe('isFive', function() {
     it('should be a defined function', function() {
@@ -63,6 +71,8 @@ describe('isFive', function() {
     });
 
 });
+
+
 
 describe('isEven', function() {
     it('should be a defined function', function() {
@@ -100,5 +110,51 @@ describe('isEven', function() {
     it('should return false if input is a boolean ', function() {
         expect(isEven(true)).toBe(false);
     });
+
+    it('should return false if there is no input ', function() {
+        expect(isEven()).toBe(false);
+    });
+
+});
+
+
+
+describe('isVowel', function() {
+    it('should be a defined function', function() {
+        expect(typeof isVowel).toBe('function');
+    });
+
+    it('should return a boolean when called', function() {
+        expect(typeof isVowel()).toBe("boolean");
+    });
+
+    it('should return true if input is "a" ', function() {
+        expect(isVowel("a")).toBe(true);
+    });
+
+    it('should return true if input is "A" ', function() {
+        expect(isVowel("A")).toBe(true);
+    });
+
+    it('should return false if input is "y" ', function() {
+        expect(isVowel("y")).toBe(false);
+    });
+
+    it('should return false if input is 4 ', function() {
+        expect(isVowel(4)).toBe(false);
+    });
+
+    it('should return false if input is a boolean ', function() {
+        expect(isVowel(true)).toBe(false);
+    })
+
+    it('should return false if input is "banana" ', function() {
+        expect(isVowel("banana")).toBe(false);
+    })
+
+    it('should return false if there is no input ', function() {
+        expect(isVowel()).toBe(false);
+    });
+
 
 });
